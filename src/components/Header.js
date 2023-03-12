@@ -32,7 +32,7 @@ export default function Header() {
               (
               <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end flex-grow-1 pe-2">
                 <Button className='button' variant="secondary" onClick={()=> navigate("/login")}>Log in</Button>
-                <Button className='button' variant="info" onClick={()=> navigate("/register")}>Sign up</Button>
+                <Button className='button' variant="success" onClick={()=> navigate("/register")}>Sign up</Button>
               </Navbar.Collapse>
               )          
           }

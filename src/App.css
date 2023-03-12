@@ -103,3 +103,10 @@
     border: 1px solid;
     margin-left: 100px auto;
 }
+.search {
+    border-radius: 20px;
+    text-align: center;
+    font-size: medium;
+    height: 50px;
+    width: 300px;
+}

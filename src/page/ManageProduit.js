@@ -59,7 +59,7 @@ function ManageProduit() {
         <Button variant='primary' className='buttonAdd' onClick={handleShow} > Ajouter </Button>
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                <Modal.Title>ADD Product</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Form>
