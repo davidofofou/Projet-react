@@ -72,6 +72,34 @@ function ManageProduit() {
     setShow(false);
   };
 
+  const showPagination = () => {
+    const postsPerPage = 5 ;
+    const pageNumbers = [];
+    const totalPosts = product.length;
+    const currentPage = 1;
+ 
+    for(let i = 1; i<=Math.ceil(totalPosts/postsPerPage); i++){
+      pageNumbers.push(i)
+    }
+ 
+    const pagination = (pageNumbers) => {
+      currentPage = pageNumbers;
+    }
+ 
+    return(
+      <nav>
+        <ul className="pagination">
+        {pageNumbers.map(number => (
+          <li key={number} className={currentPage === number ? 'page-item active' : 'page-item' }>
+          <button onClick={()=> pagination(number)} className="page-link"> {number} </button>
+          </li>
+        ))}
+        </ul>
+      </nav>
+    )
+ 
+ 
+  }
   return (
     <>
         <Button variant='primary' className='buttonAdd' onClick={handleShow} > Ajouter </Button>
@@ -137,6 +165,9 @@ function ManageProduit() {
                   {renderUsers()}
                 </tbody>
               </Table>
+              <div style={{ float: 'right' }}>
+                {showPagination()}
+              </div>
         </div>
     </>
   )
