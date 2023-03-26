@@ -14,6 +14,7 @@ const productSlice = createSlice({
         state.push(newProduct);
        },
       toggleProduct: (state, action) =>{ 
+        state = state.filter(prod => prod.id !== action.payload.id);
         const updateProduct = action.payload;
         state.push(updateProduct);
       },
