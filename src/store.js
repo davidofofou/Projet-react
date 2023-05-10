@@ -22,7 +22,31 @@ const productSlice = createSlice({
       },
       { 
         id: 4, 
-        name: 'Robe', 
+        name: 'Robe de soirée', 
+        prix: '2500 CFA',
+        description: "Une robe de soirée est une longue robe tombante normalement portée pour des événements formels"
+       },
+       { 
+        id: 4, 
+        name: 'Robe de soirée', 
+        prix: '2500 CFA',
+        description: "Une robe de soirée est une longue robe tombante normalement portée pour des événements formels"
+       },
+       { 
+        id: 4, 
+        name: 'Robe de soirée', 
+        prix: '2500 CFA',
+        description: "Une robe de soirée est une longue robe tombante normalement portée pour des événements formels"
+       },
+       { 
+        id: 4, 
+        name: 'Robe de soirée', 
+        prix: '2500 CFA',
+        description: "Une robe de soirée est une longue robe tombante normalement portée pour des événements formels"
+       },
+       { 
+        id: 4, 
+        name: 'Robe de soirée', 
         prix: '2500 CFA',
         description: "Une robe de soirée est une longue robe tombante normalement portée pour des événements formels"
        }

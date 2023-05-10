@@ -6,12 +6,19 @@ import Col from 'react-bootstrap/Col';
 export default function CustumCard(props) {
   return (
     <Col>
-          <Card>
+          <Card style={
+            { 
+            width: '20rem',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            height: '30rem'
+            }
+          }>
             <Card.Img variant="top" src={pull} />
             <Card.Body>
               <Card.Title>{props.product.name}</Card.Title>
-              <Card.Text>
-                {props.product.description}
+              <Card.Text className='text-wrapper'>
+                {props.product.description }
               </Card.Text>
             </Card.Body>
             <Card.Body>
@@ -20,7 +27,7 @@ export default function CustumCard(props) {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
+    </Col>
   )
 }
 

@@ -21,7 +21,7 @@ export default function () {
                 className="text-decoration-none"
                 style={{ color: 'inherit' }}
                 >
-                Sidebar
+                Dashboard
                 </a>
             </CDBSidebarHeader>
             <CDBSidebarContent className="sidebar-content">
@@ -58,7 +58,7 @@ export default function () {
                 padding: '20px 5px',
                 }}
                 >
-                Sidebar Footer
+                Admin Board
                 </div>
             </CDBSidebarFooter>
         </CDBSidebar>
