@@ -11,19 +11,28 @@ export default function CustumCard(props) {
             width: '20rem',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-            height: '30rem'
+            height: '32rem'
             }
           }>
             <Card.Img variant="top" src={pull} />
             <Card.Body>
-              <Card.Title>{props.product.name}</Card.Title>
+              <Card.Title style={{
+                textAlign: 'center',
+                fontFamily: 'Time New Roman, Helvetica'
+              }}>
+                <b>{props.product.name}</b>
+              </Card.Title>
               <Card.Text className='text-wrapper'>
                 {props.product.description }
               </Card.Text>
             </Card.Body>
             <Card.Body>
-              <Card.Text>
-                {props.product.prix}
+              <Card.Text style={{
+                textAlign: 'center',
+              }}>
+                <div>
+                  <button className='btn btn-info'>Voir..</button>
+                </div>
               </Card.Text>
             </Card.Body>
           </Card>
