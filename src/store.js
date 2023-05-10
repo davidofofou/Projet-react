@@ -3,10 +3,29 @@ import { configureStore, createSlice } from '@reduxjs/toolkit';
 const productSlice = createSlice({
     name: "product",
     initialState: [
-      { id: 1, name: 'T-shirt', prix: '2100 CFA' },
-      { id: 2, name: 'chemise', prix: '1900 CFA'},
-      { id: 3, name: 'pantalon', prix: '1600 CFA' },
-      { id: 4, name: 'Robe', prix: '2500 CFA' }
+      { 
+        id: 1, name: 'T-shirt', 
+        prix: '2100 CFA', 
+        description: "Maillot en jersey de coton, initialement sans col et à manches courtes, dont la forme rappelle celle d'un T" 
+      },
+      { 
+        id: 2, 
+        name: 'chemise Coton', 
+        prix: '1900 CFA', 
+        description : "le coton est une fibre naturelle et est par conséquent hypoallergénique. Cette matière permet d’isoler la chaleur corporelle"
+      },
+      { 
+        id: 3, 
+        name: 'pantalon super 100', 
+        prix: '1600 CFA',
+        description: "pantalons super cent pour homme sont des atouts de notre dressing masculin. Amples au niveau de la taille, et pas sérrés au niveau des chevilles"
+      },
+      { 
+        id: 4, 
+        name: 'Robe', 
+        prix: '2500 CFA',
+        description: "Une robe de soirée est une longue robe tombante normalement portée pour des événements formels"
+       }
     ],
     reducers:{
       addProduct: (state,action) => {

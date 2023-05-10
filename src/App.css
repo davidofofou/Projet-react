@@ -72,7 +72,7 @@
    
 }
 .bgimage {
-    height: 90vh;
+    height: 60vh;
     background: url('asset/images/heroImage.jpeg');
     background-size: cover;
     position: relative;
