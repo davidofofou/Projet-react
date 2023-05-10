@@ -14,6 +14,11 @@ export default function CustumCard(props) {
                 {props.product.description}
               </Card.Text>
             </Card.Body>
+            <Card.Body>
+              <Card.Text>
+                {props.product.prix}
+              </Card.Text>
+            </Card.Body>
           </Card>
         </Col>
   )
